@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Jiu-Jitsu Educação</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <h2>Projeto Voluntário </h2>
+            <h1>Jiu-Jitsu Educação</h1>
+            <p>Preencha abaixo todos os campos para que possamos te conhecer melhor!!!</p>
+            <fieldset>
+                <legend>Pessoal</legend>
+                <p><label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required></p>
+                <p><label for="isobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="isobrenome" required></p>
+                <p><label for="itelefone">Telefone do Responsável</label>
+                <input type="tel" name="telefone" id="itelefone" required placeholder="(xx) xxxx-xxxx"></p>
+                <p>Este número tem WhatsApp?</p>
+                <input type="radio" name="whatsapp" id="isim" value="sim" required>
+                <label for="isim">Sim</label>
+                <input type="radio" name="whatsapp" id="inao" value="nao" required>
+                <label for="inao">Não</label>
+                <p><label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required></p>
+            </fieldset>
+            <fieldset>
+                <legend>Formação</legend>
+                <p></p>
+                <p><label for="icurso">Nome da Escola</label>
+                <input type="text" name="curso" id="icurso"></p>
+                <p><label for="ifaculdade">Em qual série você está?</label>
+                <input type="text" name="faculdade" id="ifaculdade"></p>
+                <p><label for="iinicio">Você estuda em qual período?</label>
+                    <input type="text" name="faculdade" id="ifaculdade"></p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Qual horário você tem disponibilidade de treinar?</legend>
+                <br>
+                <input type="checkbox" name="seguranca " id="iseguranca"><label for="iseguranca">Período Manhã - Escola</label><br>
+                <input type="checkbox" name="backend" id="ibackend"><label for="ibackend">Período Tarde - Escola</label><br>
+                <input type="checkbox" name="frontend" id="ifrontend"><label for="ifrontend">Período Manhã - Centro de Treinamento</label><br>
+                <input type="checkbox" name="desktop" id="idesktop"><label for="idesktop">Período Tarde - Centro de Treinamento</label><br>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Fale sobre você</legend>
+                <p>Me conte uma curiosidade/caracteristica/medicamento.. Algo importante sobre você.</p>
+                <textarea name="mensagem" id="imensagem" cols="30" rows="10" placeholder="escreva aqui" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Localização</legend>
+                <p><label for="iest">Estado</label>
+                <select name="estado" id="iest" required>
+                    <option value="">Clique para escolher</option>
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="DF">Distrito Federal </option>
+                        <option value="GO">Goiás</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+                    <optgroup label="Região Norte">
+                        <option value="AC">Acre</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="PA">Pará</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="ES">Espírito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Rigião Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </select>
+                </p>
+                <p><label for="icidade">Cidade</label>
+                    <input type="text" name="cidade" id="icidade" required></p>
+                <label for="irua">Rua</label>
+                <input type="text" name="rua" id="irua" required>
+                <p>
+                    <label for="inumero">Número</label>
+                    <input type="number" name="numero" id="inumero" required>
+                </p>
+                <p>
+                    <label for="icomplemento">Complemento</label>
+                    <input type="text" name="icomplemento" id="icomplemento" required>
+                </p>
+                <p>
+                    <label for="ibairro">Bairro</label>
+                    <input type="text" name="ibairro" id="ibairro" required>
+                </p>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Anexe seu último boletim escolar aqui.</legend>
+                <p><label for="icurriculo">Clique para anexar (formato PDF).</label>
+                <br><br><input type="file" name="curriculo" id="icurriculo"></p>
+            </fieldset>
+            <p><input type="submit" value="Enviar" class="enviar"></p>
+        </form>
+    </main>
+</body>
+</html>
+
+
+
