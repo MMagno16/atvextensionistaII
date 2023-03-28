@@ -2,7 +2,7 @@
 
 ### 💡 Ideia do projeto:
 
-Criar um formulário onde os alunos interessados possam se cadastrar, para controle das aulas e dos mesmos.
+Criar um formulário simples, onde os alunos interessados possam se cadastrar para as aulas.
 
 Objetivo:
 
