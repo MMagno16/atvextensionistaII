@@ -1,4 +1,4 @@
-# atvextensionistaII
+# Atividade Extensionista II - Faculdade Uninter - 3º Semestre
 
 ### 💡 Ideia do projeto:
 
