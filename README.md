@@ -64,7 +64,7 @@ Encontrei duas maneiras de fazer isso no W3Schools, uma delas é mudar a [cor da
 
 ### 💻 Resultado:
 
-Acesse o projeto aqui [aqui](https://github.com/MMagno16/atvextensionistaII)!
+Acesse o projeto [aqui](https://github.com/MMagno16/atvextensionistaII)!
 
 ##
 
